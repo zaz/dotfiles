@@ -1,0 +1,6 @@
+
+PATH="$PATH:/data/.bin"
+
+# Deb Settings:
+DEB_NAME='Josh Brown'
+DEB_EMAIL='joshbrown15@gmail.com'

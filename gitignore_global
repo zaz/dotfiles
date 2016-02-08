@@ -1,0 +1,31 @@
+# Binaries #
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.pyc
+
+# Packages #
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Data #
+*.log
+*.sql
+*.sqlite
+
+# OS #
+*~
+*.swp
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db

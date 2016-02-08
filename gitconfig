@@ -1,0 +1,75 @@
+[user]
+	name = Zaz Brown
+	email = zazbrown@yandex.com
+[alias]
+	l = log --graph --all --pretty=format:'%Cred%h%Creset %Cgreen%cd%Creset %s%C(yellow)%d%Creset' --abbrev-commit --date=relative
+	la = log --graph --all --pretty=format:'%Cred%h%Creset %Cgreen%cd%Creset %s%C(yellow)%d%Creset %gd' --abbrev-commit --date=short
+	lm = log --graph --all --pretty=format:'%Cred%h%Creset %Cgreen%cd%Creset %s%C(yellow)%d%Creset' --abbrev-commit --date=short --first-parent
+	lg = log --oneline
+	h = help
+	s = status
+	c = commit
+	cc = commit --patch
+	d = diff --minimal
+	dw = diff --color --color-words
+	dl = diff --color --color-words --word-diff-regex='.'
+	br = branch -vv
+	a = add
+	ch = checkout
+	i = init
+	sh = show
+	p = push
+	f = fetch
+	m = merge
+	fm = pull  # pull = fetch, merge
+	cl = clone
+	rb = rebase --autosquash
+	rbc = rebase --continue
+	rba = rebase --abort
+	rf = reflog
+	bi = bisect
+	re = remote --verbose
+	se = stash save --include-untracked
+	sp = stash pop
+	dc = diff --cached
+	bia = !git bisect start && git bisect bad && git bisect good `git rev-list --max-parents=0 --first-parent HEAD`
+	bir = !sh -c 'git bisect start && git bisect bad &&\
+		git bisect good `git rev-list --max-parents=0 --first-parent HEAD` &&\
+		git bisect run "$@" && git bisect reset' -
+	te = !sh git-test
+	undo = reset --soft HEAD~
+	rs = reset
+	rsp = reset --patch
+	dc = diff --cached
+[core]
+	whitespace = trailing-space,space-before-tab
+	excludesfile = ~/.gitignore_global
+	pager = less
+	quotepath = false
+[status]
+	short = true
+	branch = true
+[apply]
+	whitespace = fix
+[diff]
+	tool = vimdiff
+[color]
+	ui = auto
+; [color "branch"]
+; 	current = green
+; 	local = blue
+; 	remote = magenta
+; [color "diff"]
+; 	meta = magenta bold
+; 	frag = cyan bold
+; 	old = red
+; 	new = green
+	; whitespace = reverse
+; [color "status"]
+; 	added = green
+; 	changed = yellow
+; 	untracked = red
+[push]
+	default = simple
+[rerere]
+	enabled = true
