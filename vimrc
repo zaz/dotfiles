@@ -21,6 +21,7 @@ set listchars=tab:│\ ,trail:\ ,extends:#,nbsp:\  " Highlight problematic white
 		" Example.  
 set spell
 set spelllang=en,ru
+set nrformats-=octal  " Never treat numbers as octal when incrementing
 
 set showmatch
 set hlsearch
@@ -43,6 +44,8 @@ augroup vimrchooks
 	autocmd!
 	autocmd bufwritepost .vimrc "source ~/.vimrc
 augroup END
+
+" Show file in split screen
 " noremap <silent> <Leader>vs :<C-u>bo vs<CR>Lzt:setl scb<CR><C-w>p:setl scb<CR>
 noremap <silent> <Leader>vs :<C-u>let @z=&so<CR>:set so=0 noscb<CR>:bo vs<CR>Ljzt:setl scb<CR><C-w>p:setl scb<CR>:let &so=@z<CR>
 

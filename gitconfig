@@ -53,6 +53,7 @@
 	whitespace = fix
 [diff]
 	tool = vimdiff
+	compactionHeuristic = true  ; more sensible diffs
 [color]
 	ui = auto
 ; [color "branch"]
@@ -73,3 +74,8 @@
 	default = simple
 [rerere]
 	enabled = true
+; better highlighting:
+[pager]
+	log = /usr/share/git/diff-highlight/diff-highlight | less
+	show = /usr/share/git/diff-highlight/diff-highlight | less
+	diff = /usr/share/git/diff-highlight/diff-highlight | less

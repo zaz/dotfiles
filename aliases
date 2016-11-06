@@ -10,16 +10,16 @@ alias yus='yaourt -Sy'
 alias yuu='yaourt -Syu'
 alias yua='yaourt -Sua'
 
-# alias ins='sudo apt-get install'
-# alias app='sudo apt-get'
+# alias ins='\/bin/sudo apt-get install'
+# alias app='\/bin/sudo apt-get'
 # compdef app='apt-get'
 
 alias n='urxvtcd -cd "$(pwd)"'
 alias startx='startx &> ~/.Xlog'
-alias pgd='sudo -bu postgres postgres -D /var/lib/postgres/data'
-alias pgdf='sudo -u postgres postgres -D /var/lib/postgres/data'
+alias pgd='\/bin/sudo -bu postgres postgres -D /var/lib/postgres/data'
+alias pgdf='\/bin/sudo -u postgres postgres -D /var/lib/postgres/data'
 alias jsw='jekyll serve --watch'
-alias sys='sudo systemctl'
+alias sys='\/bin/sudo systemctl'
 compdef sys='systemctl'
 
 alias e='$EDITOR'
@@ -41,6 +41,8 @@ alias nkent='sudo systemctl stop NetworkManager 2>/dev/null; sudo netctl switch-
 alias nmit='sudo systemctl stop NetworkManager 2>/dev/null; sudo netctl switch-to MIT'
 alias nn='\/bin/sudo netctl'
 compdef nn='netctl'
+alias mr='\/bin/sudo ip link set wlan0 down && \/bin/sudo macchanger -a wlan0'
+alias gv='cd ~/Desktop/movie/YouTube && youtube-dl '
 
 function mnt() {
 	[[ "$1" == ,* ]] && 1="/dev/${1#,}"
