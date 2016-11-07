@@ -71,7 +71,7 @@ eval $(dircolors -b)
 PATH="/usr/lib/cw:$PATH"
 export LESSOPEN='| /usr/bin/source-highlight-esc.sh %s'
 export LESS=' -R '
-eval `dircolors ~/.myconfig/solarized.dircolors`
+eval `dircolors ~/.config/solarized.dircolors`
 
 
 # Prompt with VCS support:
