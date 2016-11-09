@@ -1,9 +1,3 @@
-XLOCK="/tmp/X.lock"
-if [[ -z $DISPLAY && ! -e $XLOCK ]]; then
-	renice -n -10 -p $$
-	touch "$XLOCK" && exec /usr/bin/startx
-fi
-renice -n 0 -p $$ >/dev/null
 
 # TERM="rxvt-unicode-256color"
 PATH="$PATH:$HOME/.bin:$HOME/.gem/ruby/2.1.0/bin:$HOME/.rvm/bin"
@@ -28,15 +22,15 @@ zstyle ':completion:*' ignored-patterns '(*~)'
 alias s='sudo -E '  # the space allows us to use another alias following 's'
 compdef s='sudo'
 
-alias yu='yaourt'
-compdef yu='pacman'
-alias yus='yaourt -Sy'
-alias yuu='yaourt -Syu'
-alias yua='yaourt -Sua'
+# alias yu='yaourt'
+# compdef yu='pacman'
+# alias yus='yaourt -Sy'
+# alias yuu='yaourt -Syu'
+# alias yua='yaourt -Sua'
 
-# alias ins='sudo apt-get install'
-# alias app='sudo apt-get'
-# compdef app='apt-get'
+alias ins='sudo apt-get install'
+alias app='sudo apt-get'
+compdef app='apt-get'
 
 alias n='urxvtcd -cd "$(pwd)"'
 alias startx='startx &> ~/.Xlog'

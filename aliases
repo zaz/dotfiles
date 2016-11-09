@@ -1,7 +1,7 @@
 #!/bin/sh
-alias s='\/bin/sudo '  # the backslash ignores aliases for /bin/sudo (security)
+alias s='\/usr/bin/sudo '  # the backslash ignores aliases for /bin/sudo (security)
 compdef s='sudo'
-alias se='\/bin/sudo -E '  # the space allows us to chain aliases
+alias se='\/usr/bin/sudo -E '  # the space allows us to chain aliases
 compdef se='sudo'
 
 alias yu='yaourt'
