@@ -104,3 +104,5 @@ export PYTHONPATH=/usr/lib/python3.3/site-packages
 
 # PATH="$PATH:/home/josh/.gem/ruby/2.1.0/bin"
 # export PATH
+
+source ~/.config/aliases

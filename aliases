@@ -5,7 +5,7 @@ alias se='\/bin/sudo -E '  # the space allows us to chain aliases
 compdef se='sudo'
 
 alias yu='yaourt'
-compdef yu='pacman'
+# compdef yu='pacman'
 alias yus='yaourt -Sy'
 alias yuu='yaourt -Syu'
 alias yua='yaourt -Sua'
@@ -40,7 +40,7 @@ alias ncopley='sudo systemctl stop NetworkManager 2>/dev/null; sudo netctl switc
 alias nkent='sudo systemctl stop NetworkManager 2>/dev/null; sudo netctl switch-to kent-guest'
 alias nmit='sudo systemctl stop NetworkManager 2>/dev/null; sudo netctl switch-to MIT'
 alias nn='\/bin/sudo netctl'
-compdef nn='netctl'
+# compdef nn='netctl'
 alias mr='\/bin/sudo ip link set wlan0 down && \/bin/sudo macchanger -a wlan0'
 alias gv='cd ~/Desktop/movie/YouTube && youtube-dl '
 
