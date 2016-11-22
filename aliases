@@ -73,3 +73,7 @@ alias cljrun='LEIN_FAST_TRAMPOLINE=1 lein trampoline run'
 
 alias getime='\/bin/sudo ntpd -q && \/bin/sudo hwclock -w'
 alias wfi='\/bin/sudo wifi-menu'
+
+alias t='tmsu'
+compdef t='tmsu'
+alias tt='tmsu tag'
