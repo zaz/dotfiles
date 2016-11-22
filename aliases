@@ -1,25 +1,25 @@
 #!/bin/sh
-alias s='\/usr/bin/sudo '  # the backslash ignores aliases for /bin/sudo (security)
+alias s='\/usr/bin/sudo '  # the backslash ignores aliases for /usr/bin/sudo (security)
 compdef s='sudo'
 alias se='\/usr/bin/sudo -E '  # the space allows us to chain aliases
 compdef se='sudo'
 
-alias yu='yaourt'
-# compdef yu='pacman'
-alias yus='yaourt -Sy'
-alias yuu='yaourt -Syu'
-alias yua='yaourt -Sua'
+# alias yu='yaourt'
+# # compdef yu='pacman'
+# alias yus='yaourt -Sy'
+# alias yuu='yaourt -Syu'
+# alias yua='yaourt -Sua'
 
-# alias ins='\/bin/sudo apt-get install'
-# alias app='\/bin/sudo apt-get'
-# compdef app='apt-get'
+alias ins='\/usr/bin/sudo apt-get install'
+alias app='\/usr/bin/sudo apt-get'
+compdef app='apt-get'
 
 alias n='urxvtcd -cd "$(pwd)"'
 alias startx='startx &> ~/.Xlog'
-alias pgd='\/bin/sudo -bu postgres postgres -D /var/lib/postgres/data'
-alias pgdf='\/bin/sudo -u postgres postgres -D /var/lib/postgres/data'
+alias pgd='\/usr/bin/sudo -bu postgres postgres -D /var/lib/postgres/data'
+alias pgdf='\/usr/bin/sudo -u postgres postgres -D /var/lib/postgres/data'
 alias jsw='jekyll serve --watch'
-alias sys='\/bin/sudo systemctl'
+alias sys='\/usr/bin/sudo systemctl'
 compdef sys='systemctl'
 
 alias e='$EDITOR'
@@ -39,9 +39,9 @@ alias neber='sudo systemctl stop NetworkManager 2>/dev/null; sudo netctl switch-
 alias ncopley='sudo systemctl stop NetworkManager 2>/dev/null; sudo netctl switch-to mooseclubi'
 alias nkent='sudo systemctl stop NetworkManager 2>/dev/null; sudo netctl switch-to kent-guest'
 alias nmit='sudo systemctl stop NetworkManager 2>/dev/null; sudo netctl switch-to MIT'
-alias nn='\/bin/sudo netctl'
+alias nn='\/usr/bin/sudo netctl'
 # compdef nn='netctl'
-alias mr='\/bin/sudo ip link set wlan0 down && \/bin/sudo macchanger -a wlan0'
+alias mr='\/usr/bin/sudo ip link set wlan0 down && \/bin/sudo macchanger -a wlan0'
 alias gv='cd ~/Desktop/movie/YouTube && youtube-dl '
 
 function mnt() {
@@ -71,8 +71,8 @@ function popout() {
 alias cljfast='LEIN_FAST_TRAMPOLINE=1 lein trampoline run -m clojure.main'
 alias cljrun='LEIN_FAST_TRAMPOLINE=1 lein trampoline run'
 
-alias getime='\/bin/sudo ntpd -q && \/bin/sudo hwclock -w'
-alias wfi='\/bin/sudo wifi-menu'
+alias getime='\/usr/bin/sudo ntpd -q && \/bin/sudo hwclock -w'
+alias wfi='\/usr/bin/sudo wifi-menu'
 
 alias t='tmsu'
 compdef t='tmsu'
