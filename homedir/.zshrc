@@ -19,26 +19,6 @@ zstyle ':completion:*' ignore-parents parent pwd .. directory
 zstyle ':completion:*' preserve-prefix '//[^/]##/'
 zstyle ':completion:*' ignored-patterns '(*~)'
 
-alias s='sudo -E '  # the space allows us to use another alias following 's'
-compdef s='sudo'
-
-# alias yu='yaourt'
-# compdef yu='pacman'
-# alias yus='yaourt -Sy'
-# alias yuu='yaourt -Syu'
-# alias yua='yaourt -Sua'
-
-alias ins='sudo apt-get install'
-alias app='sudo apt-get'
-compdef app='apt-get'
-
-alias n='urxvtcd -cd "$(pwd)"'
-alias startx='startx &> ~/.Xlog'
-alias pgd='sudo -u postgres postgres -D /var/postgres'
-alias jsw='jekyll serve --watch'
-alias sys='sudo systemctl'
-compdef sys='systemctl'
-
 function p() {
 	case "$1" in
 		l ) 1=192.168.0.1 ;;
@@ -49,11 +29,6 @@ function p() {
 }
 
 function o() { (xdg-open $@)& }
-alias e='$EDITOR'
-alias d='cd ~/Desktop'
-alias g='git'
-compdef g='git'
-alias r='rails'
 
 alias brightness-HDMI1='xrandr --output HDMI1 --brightness'
 
