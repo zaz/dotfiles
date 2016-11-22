@@ -1,6 +1,6 @@
 [user]
 	name = Zaz Brown
-	email = zazbrown@yandex.com
+	email = zazbrown@zazbrown.com
 [alias]
 	l = log --graph --all --pretty=format:'%Cred%h%Creset %Cgreen%cd%Creset %s%C(yellow)%d%Creset' --abbrev-commit --date=relative
 	la = log --graph --all --pretty=format:'%Cred%h%Creset %Cgreen%cd%Creset %s%C(yellow)%d%Creset %gd' --abbrev-commit --date=short
