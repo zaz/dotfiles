@@ -1,4 +1,3 @@
-
 # TERM="rxvt-unicode-256color"
 PATH="$PATH:$HOME/.bin:$HOME/.gem/ruby/2.1.0/bin:$HOME/.rvm/bin"
 
@@ -75,3 +74,5 @@ export PYTHONPATH=/usr/lib/python3.3/site-packages
 # export PATH
 
 source ~/.config/aliases
+
+cdm () { mkdir -p "$1" && cd "$1" }
