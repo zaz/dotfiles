@@ -1,0 +1,9 @@
+"*":
+  core:
+    telemetryConsent: "limited"
+  editor:
+    showInvisibles: true
+    softTabs: false
+    softWrap: true
+  welcome:
+    showOnStartup: false
