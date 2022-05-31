@@ -24,7 +24,7 @@ compdef sys='systemctl'
 
 alias e='$EDITOR'
 alias d='cd ~/Desktop'
-alias g='git'
+alias g='TZ=UTC git '
 compdef g='git'
 alias r='rails'
 alias l='ls'
