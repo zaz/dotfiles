@@ -24,7 +24,7 @@ alias sys='\/usr/bin/sudo systemctl'
 
 alias e='$EDITOR'
 alias d='cd ~/Desktop'
-alias g='TZ=UTC git '
+alias g='TZ=UTC git'
 #compdef g='git'
 alias r='rails'
 alias l='ls'
