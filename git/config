@@ -42,6 +42,8 @@
 	rs = reset
 	rsp = reset --patch
 	dc = diff --cached
+        ; reset author of all commits, keeping commit time but setting to current timezone
+        reauthor = !git rebase --root --exec 'git commit --amend --no-edit --reset-author --date=$(git log -n 1 --format=%at)'
 [core]
 	whitespace = trailing-space,space-before-tab
 	excludesfile = ~/.gitignore_global
