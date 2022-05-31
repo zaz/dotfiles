@@ -1,8 +1,8 @@
 #!/bin/sh
 alias s='\/usr/bin/sudo '  # the backslash ignores aliases for /usr/bin/sudo (security)
-compdef s='sudo'
+#compdef s='sudo'
 alias se='\/usr/bin/sudo -E '  # the space allows us to chain aliases
-compdef se='sudo'
+#compdef se='sudo'
 
 # alias yu='yaourt'
 # # compdef yu='pacman'
@@ -12,7 +12,7 @@ compdef se='sudo'
 
 alias ins='\/usr/bin/sudo apt-get install'
 alias app='\/usr/bin/sudo apt-get'
-compdef app='apt-get'
+#compdef app='apt-get'
 
 alias n='urxvtcd -cd "$(pwd)"'
 alias startx='startx &> ~/.Xlog'
@@ -20,12 +20,12 @@ alias pgd='\/usr/bin/sudo -bu postgres postgres -D /var/lib/postgres/data'
 alias pgdf='\/usr/bin/sudo -u postgres postgres -D /var/lib/postgres/data'
 alias jsw='jekyll serve --watch'
 alias sys='\/usr/bin/sudo systemctl'
-compdef sys='systemctl'
+#compdef sys='systemctl'
 
 alias e='$EDITOR'
 alias d='cd ~/Desktop'
 alias g='TZ=UTC git '
-compdef g='git'
+#compdef g='git'
 alias r='rails'
 alias l='ls'
 alias le='ls -lah'
@@ -75,5 +75,5 @@ alias getime='\/usr/bin/sudo ntpd -q && \/bin/sudo hwclock -w'
 alias wfi='\/usr/bin/sudo wifi-menu'
 
 alias t='tmsu'
-compdef t='tmsu'
+#compdef t='tmsu'
 alias tt='tmsu tag'
